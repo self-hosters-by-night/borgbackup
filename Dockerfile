@@ -1,7 +1,7 @@
 FROM alpine:3.21
 
 LABEL maintainer="git@facorazza.com"
-LABEL description="Backup image with Borg and Kubernetes tools"
+LABEL description="Container image with BackupBorg and Kubernetes tools"
 
 RUN apk add --no-cache \
     borgbackup \
