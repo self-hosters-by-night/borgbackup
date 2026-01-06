@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.23
 
 LABEL maintainer="git@facorazza.com"
 LABEL description="Container image with BackupBorg and Kubernetes tools"
