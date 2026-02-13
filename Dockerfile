@@ -1,17 +1,18 @@
 FROM alpine:3.23
 
 LABEL maintainer="git@facorazza.com"
-LABEL description="Container image with BackupBorg and Kubernetes tools"
+LABEL description="Container image with Borg Backup, Postgres and Kubernetes tools"
 
 RUN apk add --no-cache \
-    borgbackup \
-    kubectl \
-    curl \
-    tzdata \
     bash \
-    jq \
+    borgbackup \
     ca-certificates \
+    curl \
+    jq \
+    kubectl \
     openssl \
+    postgresql-client \
+    tzdata \
     && rm -rf /var/cache/apk/*
 
 CMD ["/bin/bash"]
